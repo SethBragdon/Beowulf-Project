@@ -28,7 +28,7 @@ class character {
         image.style.top = top;
         //alert("Positioned image");
         
-        let display = main.appendChild(image);
+        let display = Main.appendChild(image);
         display.onclick = () => {
             let leftDist = 0;
             let topDist = 0;
@@ -70,7 +70,7 @@ class trait {
         image.onclick = () => {this.quote();};
         //alert("Positioned image");
         
-        let display = main.appendChild(image);
+        let display = Main.appendChild(image);
         
         return display;
     }
@@ -92,17 +92,17 @@ function destroyArray(arr){
     }
 }
 
-let button = new trait(["blah", "bloo", "bleh"], 'https://codehs.com/uploads/9666398ecd0cb8f4711330f2803a7922');
+let button = new trait(["blah", "bloo", "bleh"], 'Beowulf.png');
 
-let button2 = new trait(["Blah", "Bloo", "Bleh"], 'https://codehs.com/uploads/9666398ecd0cb8f4711330f2803a7922');
+let button2 = new trait(["Blah", "Bloo", "Bleh"], 'Beowulf.png');
 
-let button3 = new trait(["BLAH", "BLOO", "BLEH"], 'https://codehs.com/uploads/9666398ecd0cb8f4711330f2803a7922');
+let button3 = new trait(["BLAH", "BLOO", "BLEH"], 'Beowulf.png');
 
-let beowulf = new character('Beowulf', 'https://codehs.com/uploads/3a6dbeffc5736a2210d89543a468e226', [button, button2, button3]);
+let beowulf = new character('Beowulf', 'Beowulf.png', [button, button2, button3]);
 
-let beowulf2 = new character('Beowulf2', 'https://codehs.com/uploads/3a6dbeffc5736a2210d89543a468e226', [button, button3]);
+let beowulf2 = new character('Beowulf2', 'Beowulf.png', [button, button3]);
 
-let beowulf3 = new character('Beowulf3', 'https://codehs.com/uploads/3a6dbeffc5736a2210d89543a468e226', [button, button2, button3, button3, button2, button2]);
+let beowulf3 = new character('Beowulf3', 'Beowulf.png', [button, button2, button3, button3, button2, button2]);
 //let beowulfObj = beowulf.display("0px", "0px");
 //character.renders.push(beowulfObj);
 
